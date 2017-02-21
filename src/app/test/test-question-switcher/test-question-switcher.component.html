@@ -1,0 +1,6 @@
+<div *ngIf="test">
+    <test-question
+        *ngFor="let question of test.questions"
+        [testQuestion]="question">
+    </test-question>
+</div>

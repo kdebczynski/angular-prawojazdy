@@ -140,13 +140,237 @@ export class InMemoryTestService implements InMemoryDbService {
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
-
-                    // Advance; Low
                     {
                         id: 12,
                         title: 'Pytanie 12',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 13,
+                        title: 'Pytanie 13',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 14,
+                        title: 'Pytanie 14',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 15,
+                        title: 'Pytanie 15',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 16,
+                        title: 'Pytanie 16',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 17,
+                        title: 'Pytanie 17',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 18,
+                        title: 'Pytanie 18',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 19,
+                        title: 'Pytanie 19',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 20,
+                        title: 'Pytanie 20',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [1]
+                    },
+
+                    // Advance; Low
+                    {
+                        id: 21,
+                        title: 'Pytanie 21',
                         type: TestQuestionType.Advanced,
                         importance: TestQuestionImportance.Low,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 22,
+                        title: 'Pytanie 22',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.Low,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+
+                    // Advance; Medium
+                    {
+                        id: 23,
+                        title: 'Pytanie 23',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.Medium,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 24,
+                        title: 'Pytanie 24',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.Medium,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 25,
+                        title: 'Pytanie 25',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.Medium,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 26,
+                        title: 'Pytanie 26',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.Medium,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+
+                    // Advance; High
+                    {
+                        id: 27,
+                        title: 'Pytanie 27',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 28,
+                        title: 'Pytanie 28',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 29,
+                        title: 'Pytanie 29',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 30,
+                        title: 'Pytanie 30',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 31,
+                        title: 'Pytanie 31',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
+                        question: 'q 1',
+                        answers: TestQuestionAnswers.ADVANCED,
+                        correctAnswers: [1]
+                    },
+                    {
+                        id: 32,
+                        title: 'Pytanie 32',
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',

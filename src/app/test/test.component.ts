@@ -29,8 +29,6 @@ export class TestComponent implements OnInit {
     ) {}
 
     ngOnInit(): void {
-        console.log('test init');
-
         this.route.params.subscribe((value) => {
             this.param = value
             this.getTest(+this.param['id'])
@@ -48,8 +46,6 @@ export class TestComponent implements OnInit {
             this.advancedQuestonsRand = this.testDataService.getRandomizedQuestions(
                 this.testDataService.getQuestionsByType(test, TestQuestionType.Advanced)
             )
-
-            console.log(this.simpleQuestionsRand, this.advancedQuestonsRand)
         })
     }
 }
