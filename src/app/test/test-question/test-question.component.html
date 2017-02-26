@@ -1,5 +1,19 @@
 <h3>{{testQuestion.title}}</h3>
 <p>{{testQuestion.question}}</p>
 <p>{{testQuestion.type}}</p>
+<p>{{testQuestion.readTime}}</p>
+<p>{{testQuestion.answerTime}}</p>
 <p>{{testQuestion.importance}}</p>
-<p>{{testQuestion.answers}}</p>
+
+<button *ngIf="!isRead"
+    (click)="read(true)">
+    Odpowiedz
+</button>
+
+<div *ngIf="isRead">
+    <button *ngFor="let qAnswer of testQuestion.answers"
+        (click)="answer(qAnswer)"
+        [disabled]="answered">
+        {{qAnswer}}
+    </button>
+</div>

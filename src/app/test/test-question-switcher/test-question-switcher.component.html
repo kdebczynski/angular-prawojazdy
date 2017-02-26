@@ -1,6 +1,21 @@
 <div *ngIf="test">
-    <test-question
-        *ngFor="let question of test.questions"
-        [testQuestion]="question">
-    </test-question>
+    <button (click)="prevQuestion()">
+        Poprzednie
+    </button>
+    <button (click)="nextQuestion()">
+        Następne
+    </button>
+
+    <div>
+        {{totalTimeMinutes}}
+    </div>
+
+    <ng-container *ngFor="let question of test.questions; let i = index">
+        <test-question
+            *ngIf="i === actualQuestionIterator"
+            (onRead)="onQuestionRead($event)"
+            (onAnswer)="onQuestionAnsweared($event)"
+            [testQuestion]="question">
+        </test-question>
+    </ng-container>
 </div>

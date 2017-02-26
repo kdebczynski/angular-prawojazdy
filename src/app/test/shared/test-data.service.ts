@@ -24,4 +24,23 @@ export class TestDataService {
         return Helpers.suffleArray(questions)
     }
 
+    getTotalTime(questions: TestQuestion[]): number {
+        let totalTime: number = 0
+        
+        for (let i = 0; i < questions.length; i++) {
+            totalTime += questions[i].readTime
+            totalTime += questions[i].answerTime
+        }
+
+        return totalTime
+    }
+
+    millisecondsToTime(milli: number): string {
+        let milliseconds = milli % 1000
+        let seconds = Math.floor((milli / 1000) % 60)
+        let minutes = Math.floor((milli / (60 * 1000)) % 60)
+
+        return minutes + ":" + seconds
+    }
+
 }

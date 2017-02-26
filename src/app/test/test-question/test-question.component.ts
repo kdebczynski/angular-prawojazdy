@@ -9,17 +9,22 @@ import { TestQuestion }                                     from './shared/test-
 })
 export class TestQuestionComponent implements OnInit {
     @Input() testQuestion: TestQuestion
-    @Output() onRead = new EventEmitter<Number>()
-    @Output() onReadTimeout = new EventEmitter<Number>()
-    @Output() onAnswer = new EventEmitter<Number>()
-    @Output() onAnswerTimeout = new EventEmitter<Number>()
+    @Output() onRead = new EventEmitter<boolean>()
+    @Output() onAnswer = new EventEmitter<string>()
 
-    ngOnInit() {
-        this.start()
+    isRead: boolean = false
+    answered: string
+
+    ngOnInit() {}
+
+    read(agreed: boolean) {
+        this.onRead.emit(agreed)
+        this.isRead = agreed
     }
 
-    private start() {
-
+    answer(agreed: string) {
+        this.onAnswer.emit(agreed)
+        this.answered = agreed
     }
 
 }

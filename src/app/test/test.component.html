@@ -1,5 +1,5 @@
 <div class="content">
     <h1>{{testItem?.name}}</h1>
 
-    <test-question-switcher [test]="testItem"></test-question-switcher>
+    <test-question-switcher *ngIf="testItem" [test]="testItem"></test-question-switcher>
 </div>

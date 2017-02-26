@@ -3,17 +3,17 @@ export const enum TestQuestionType {
     Advanced
 }
 
-export const enum TestQuestionTime {
-    SimpleRead = 1000 * 20,
-    SimpleAnswer = 1000 * 15,
-    AdvancedRead = 0,
-    AdvancedAnswer = 1000 * 50,
-}
-
 export const enum TestQuestionImportance {
     Low = 1,
     Medium = 2,
     High = 3
+}
+
+export const TestQuestionTime = {
+    SimpleRead: 1000 * 20,
+    SimpleAnswer: 1000 * 15,
+    AdvancedRead: 0,
+    AdvancedAnswer: 1000 * 50,
 }
 
 export const TestQuestionAnswers = {
