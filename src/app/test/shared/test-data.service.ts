@@ -32,7 +32,7 @@ export class TestDataService {
             totalTime += questions[i].answerTime
         }
 
-        return totalTime
+        return totalTime 
     }
 
     millisecondsToTime(milli: number): string {

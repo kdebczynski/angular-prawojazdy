@@ -1,5 +1,6 @@
 import { Component, OnInit, EventEmitter, Input, Output }   from '@angular/core';
 import { TestQuestion }                                     from './shared/test-question.model'
+import { TestDataService }                                  from '../shared/test-data.service';
 
 @Component({
     moduleId: module.id,
@@ -9,22 +10,28 @@ import { TestQuestion }                                     from './shared/test-
 })
 export class TestQuestionComponent implements OnInit {
     @Input() testQuestion: TestQuestion
+    @Input() actualReadTime: number
+    @Input() actualAnswerTime: number
+    @Input() actualQuestionPhase: string
     @Output() onRead = new EventEmitter<boolean>()
     @Output() onAnswer = new EventEmitter<string>()
 
-    isRead: boolean = false
-    answered: string
+    constructor(
+        private testDataService: TestDataService
+    ) {}
 
     ngOnInit() {}
 
     read(agreed: boolean) {
         this.onRead.emit(agreed)
-        this.isRead = agreed
     }
 
     answer(agreed: string) {
         this.onAnswer.emit(agreed)
-        this.answered = agreed
+    }
+
+    millisecondsToTime(time: number) {
+        return this.testDataService.millisecondsToTime(time)
     }
 
 }

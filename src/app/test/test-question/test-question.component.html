@@ -1,16 +1,34 @@
 <h3>{{testQuestion.title}}</h3>
 <p>{{testQuestion.question}}</p>
+
 <p>{{testQuestion.type}}</p>
-<p>{{testQuestion.readTime}}</p>
-<p>{{testQuestion.answerTime}}</p>
 <p>{{testQuestion.importance}}</p>
 
-<button *ngIf="!isRead"
+<div *ngIf="actualQuestionPhase === 'READ'">
+    <p>Czas na przeczytanie pytania</p>
+    <ngb-progressbar 
+        type="success" 
+        [value]="actualReadTime"
+        [max]="testQuestion.readTime">
+    </ngb-progressbar>
+    {{millisecondsToTime(actualReadTime)}}
+</div>
+<div *ngIf="actualQuestionPhase === 'ANSWER'">
+    <p>Czas na odpowiedź na pytanie</p>
+    <ngb-progressbar 
+        type="success" 
+        [value]="actualAnswerTime"
+        [max]="testQuestion.answerTime">
+    </ngb-progressbar>
+    {{millisecondsToTime(actualAnswerTime)}}
+</div>
+
+<button *ngIf="actualQuestionPhase === 'READ'"
     (click)="read(true)">
     Odpowiedz
 </button>
 
-<div *ngIf="isRead">
+<div *ngIf="actualQuestionPhase === 'ANSWER'">
     <button *ngFor="let qAnswer of testQuestion.answers"
         (click)="answer(qAnswer)"
         [disabled]="answered">

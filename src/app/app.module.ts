@@ -3,6 +3,8 @@ import { NgModule }             from '@angular/core';
 import { FormsModule }          from '@angular/forms';
 import { HttpModule }           from '@angular/http';
 
+import { NgbModule }            from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent }                   from './app.component';
 import { WelcomeComponent }               from './welcome/welcome.component';
 import { TestComponent}                   from './test/test.component';
@@ -26,7 +28,8 @@ import { InMemoryTestService }  from './data/mock-test-questions';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    InMemoryWebApiModule.forRoot(InMemoryTestService, { delay: 0 })
+    InMemoryWebApiModule.forRoot(InMemoryTestService, { delay: 0 }),
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

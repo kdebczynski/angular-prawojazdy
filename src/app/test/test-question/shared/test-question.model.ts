@@ -10,8 +10,8 @@ export class TestQuestion {
     question: string
     type: TestQuestionType
     importance: TestQuestionImportance
-    readTime: TestQuestionTime
-    answerTime: TestQuestionTime
+    readTime: number
+    answerTime: number
     answers: Array<string>
     correctAnswers: Array<number>
 }

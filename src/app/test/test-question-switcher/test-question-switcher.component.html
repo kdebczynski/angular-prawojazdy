@@ -1,11 +1,4 @@
 <div *ngIf="test">
-    <button (click)="prevQuestion()">
-        Poprzednie
-    </button>
-    <button (click)="nextQuestion()">
-        Następne
-    </button>
-
     <div>
         {{totalTimeMinutes}}
     </div>
@@ -15,7 +8,10 @@
             *ngIf="i === actualQuestionIterator"
             (onRead)="onQuestionRead($event)"
             (onAnswer)="onQuestionAnsweared($event)"
-            [testQuestion]="question">
+            [testQuestion]="question"
+            [actualQuestionPhase]="actualQuestionPhase"
+            [actualReadTime]="actualQuestionReadTime"
+            [actualAnswerTime]="actualQuestionAnswerTime">
         </test-question>
     </ng-container>
 </div>
