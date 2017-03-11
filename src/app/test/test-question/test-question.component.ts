@@ -14,7 +14,7 @@ export class TestQuestionComponent implements OnInit {
     @Input() actualAnswerTime: number
     @Input() actualQuestionPhase: string
     @Output() onRead = new EventEmitter<boolean>()
-    @Output() onAnswer = new EventEmitter<string>()
+    @Output() onAnswer = new EventEmitter<number>()
 
     constructor(
         private testDataService: TestDataService
@@ -26,8 +26,8 @@ export class TestQuestionComponent implements OnInit {
         this.onRead.emit(agreed)
     }
 
-    answer(agreed: string) {
-        this.onAnswer.emit(agreed)
+    answer(agreed: string, index: number) {
+        this.onAnswer.emit(index)
     }
 
     millisecondsToTime(time: number) {

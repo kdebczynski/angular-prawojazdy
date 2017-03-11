@@ -1,6 +1,5 @@
 import { Component, OnInit }        from '@angular/core';
 import { ActivatedRoute, Params }   from '@angular/router';
-import { Location }                 from '@angular/common';
 
 import { Test }                     from './shared/test.model';
 import { TestQuestion }             from './test-question/shared/test-question.model';
@@ -23,7 +22,6 @@ export class TestComponent implements OnInit {
 
     constructor(
         private route: ActivatedRoute,
-        private location: Location,
         private testService: TestService,
         private testDataService: TestDataService
     ) {}

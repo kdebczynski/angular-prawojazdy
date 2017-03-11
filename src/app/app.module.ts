@@ -11,9 +11,11 @@ import { TestComponent}                   from './test/test.component';
 import { TestQuestionSwitcherComponent}   from './test/test-question-switcher/test-question-switcher.component';
 import { TestQuestionComponent}           from './test/test-question/test-question.component';
 import { AppRoutingModule }               from './app-routing.module';
+import { ResultComponent }                from './result/result.component';
 
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryTestService }  from './data/mock-test-questions';
+import { InMemoryWebApiModule }   from 'angular-in-memory-web-api';
+import { InMemoryTestService }    from './data/mock-test-questions';
+import { TestAnswerStoreService } from './test/shared/test-answer-store.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { InMemoryTestService }  from './data/mock-test-questions';
     WelcomeComponent,
     TestComponent,
     TestQuestionSwitcherComponent,
-    TestQuestionComponent
+    TestQuestionComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,7 @@ import { InMemoryTestService }  from './data/mock-test-questions';
     InMemoryWebApiModule.forRoot(InMemoryTestService, { delay: 0 }),
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [TestAnswerStoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -29,8 +29,8 @@
 </button>
 
 <div *ngIf="actualQuestionPhase === 'ANSWER'">
-    <button *ngFor="let qAnswer of testQuestion.answers"
-        (click)="answer(qAnswer)"
+    <button *ngFor="let qAnswer of testQuestion.answers; let i = index"
+        (click)="answer(qAnswer, i)"
         [disabled]="answered">
         {{qAnswer}}
     </button>

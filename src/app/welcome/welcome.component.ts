@@ -1,5 +1,4 @@
 import { Component, OnInit }    from '@angular/core';
-import { Router }               from '@angular/router';
 
 import { Test }                 from '../test/shared/test.model';
 import { TestService }          from '../test/shared/test.service';
@@ -15,7 +14,6 @@ export class WelcomeComponent implements OnInit {
     tests: Test[];
 
     constructor(
-        private router: Router,
         private testService: TestService
     ) {}
 
