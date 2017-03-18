@@ -3,7 +3,7 @@
         {{totalTimeMinutes}}
     </div>
 
-    <ng-container *ngFor="let question of test.questions; let i = index">
+    <ng-container *ngFor="let question of randomizedQuestions; let i = index">
         <test-question
             *ngIf="i === actualQuestionIterator"
             (onRead)="onQuestionRead($event)"

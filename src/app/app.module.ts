@@ -16,6 +16,7 @@ import { ResultComponent }                from './result/result.component';
 import { InMemoryWebApiModule }   from 'angular-in-memory-web-api';
 import { InMemoryTestService }    from './data/mock-test-questions';
 import { TestAnswerStoreService } from './test/shared/test-answer-store.service';
+import { TestDataService }        from './test/shared/test-data.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { TestAnswerStoreService } from './test/shared/test-answer-store.service'
     InMemoryWebApiModule.forRoot(InMemoryTestService, { delay: 0 }),
     NgbModule.forRoot()
   ],
-  providers: [TestAnswerStoreService],
+  providers: [TestAnswerStoreService, TestDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -20,6 +20,12 @@ export class TestDataService {
         return questions
     }
 
+    getQuestionById(testQuestions: Array<TestQuestion>, id: Number): TestQuestion {
+        return testQuestions.find((el) => {
+            return el.id === id 
+        })
+    }
+
     getRandomizedQuestions(questions: TestQuestion[]): TestQuestion[] {
         return Helpers.suffleArray(questions)
     }

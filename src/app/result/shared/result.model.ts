@@ -10,4 +10,5 @@ export class Result {
     importance: TestQuestionImportance
     userAnswers: Array<number>
     correctAnswers: Array<number>
+    isCorrect: Boolean
 }

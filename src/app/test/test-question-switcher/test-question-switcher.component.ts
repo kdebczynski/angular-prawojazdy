@@ -1,6 +1,7 @@
-import { Component, OnInit, Input }     from '@angular/core';
-import { Router }                       from '@angular/router';
+import { Component, OnInit, Input, OnDestroy }      from '@angular/core';
+import { Router }                                   from '@angular/router';
 
+import { TestQuestionType }              from '../../app-config';
 import { Test }                         from '../shared/test.model';
 import { TestDataService }              from '../shared/test-data.service';
 import { TestQuestion }                 from '../test-question/shared/test-question.model';
@@ -13,10 +14,11 @@ import { TestAnswerStoreService }       from '../shared/test-answer-store.servic
     styleUrls: [ './test-question-switcher.component.css' ],
     providers: [ TestDataService ]
 })
-export class TestQuestionSwitcherComponent implements OnInit  {
+export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
     @Input()
     test: Test
 
+    randomizedQuestions: TestQuestion[]
     actualQuestionIterator: number
     totalTimeMinutes: string
     actualQuestionReadTime: number
@@ -36,18 +38,46 @@ export class TestQuestionSwitcherComponent implements OnInit  {
     ) {}
 
     ngOnInit() {
+        clearInterval(this.interval)
         this.actualQuestionIterator = -1
+        this.totalTime = 0
+        this.totalTimeMinutes = undefined
+        this.actualQuestionReadTime = 0
+        this.actualQuestionAnswerTime = 0
+        this.actualQuestionPhase = undefined
+        this.actualQuestion = undefined
+
+        this.randomize()
         this.start()
     }
 
-    start() {
+    ngOnDestroy() {
+        clearInterval(this.interval)
+    }
+
+    private randomize() {
+        let simpleQuestionsRand: TestQuestion[]
+        let advancedQuestonsRand: TestQuestion[]
+
+        simpleQuestionsRand = this.testDataService.getRandomizedQuestions(
+            this.testDataService.getQuestionsByType(this.test, TestQuestionType.Simple)
+        )
+
+        advancedQuestonsRand = this.testDataService.getRandomizedQuestions(
+            this.testDataService.getQuestionsByType(this.test, TestQuestionType.Advanced)
+        )
+
+        this.randomizedQuestions = simpleQuestionsRand.concat(advancedQuestonsRand)
+    }
+
+    private start() {
         this.nextQuestion()
         this.totalTime = this.testDataService.getTotalTime(this.test.questions)
         this.totalTimeMinutes = this.testDataService.millisecondsToTime(this.totalTime)
         this.startInterval()
     }
 
-    nextQuestion() {
+    private nextQuestion() {
         if (this.actualQuestionIterator < this.test.questions.length -1) {
             this.actualQuestionPhase = this.questionPhases[0]
             this.actualQuestionIterator++
@@ -58,6 +88,7 @@ export class TestQuestionSwitcherComponent implements OnInit  {
                 this.actualQuestionPhase = this.questionPhases[1]
             }
         } else {
+            clearInterval(this.interval)
             this.router.navigate(['/result', this.test.id]);
         }
     }

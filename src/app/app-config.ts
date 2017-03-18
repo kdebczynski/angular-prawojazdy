@@ -24,3 +24,5 @@ export const TestQuestionAnswers = {
 export const Endpoints = {
     'TESTS': 'api/tests'
 }
+
+export const MinTestPassPoints = 68
