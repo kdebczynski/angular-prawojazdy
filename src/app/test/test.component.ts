@@ -16,6 +16,7 @@ import { TestAnswerStoreService }   from './shared/test-answer-store.service';
 export class TestComponent implements OnInit {
     param: Params;
     testItem: Test;
+    totalTime: string;
 
     constructor(
         private route: ActivatedRoute,
@@ -37,5 +38,9 @@ export class TestComponent implements OnInit {
         this.testService.getTestById(id).then((test) => {
             this.testItem = test
         })
+    }
+
+    onTotalTimeChanged(time: string) {
+        this.totalTime = time
     }
 }

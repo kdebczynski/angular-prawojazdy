@@ -1,0 +1,33 @@
+.test-header {
+    background-color: #0084d7;
+    color: #ffffff;
+}
+
+    .test-header h1 {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .test-header span {
+        color: #e3e3e3;
+        font-size: 16px;
+    }
+
+.test-question h3 {
+    margin: 20px 0;
+}
+
+.test-tools {
+    background-color: #6b60d4;
+    color: #ffffff;
+    padding: 20px;
+}
+
+    .test-tools .question-info {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #aaa2f8;
+    }
+
+    .test-tools .question-time p {
+        margin: 10px 0;
+    }

@@ -1,22 +1,22 @@
 ul {
     margin: 30px auto;
     padding: 0;
-    max-width: 400px;
     list-style-type: none;
 }
 
 ul li {
-    margin: 2px;
+    margin: 10px 0;
     padding: 0;
 }
 
 ul li a {
-    padding: 10px;
-    min-width: 200px;
+    color: #ffffff;
+    padding: 20px;
     display: block;
-    background-color: #d4f4ff;
+    background-color: #0084d7;
+    text-decoration: none;
 }
 
 ul li a:hover {
-    background-color: #aee2f3;
+    background-color: #15a4ff;
 }

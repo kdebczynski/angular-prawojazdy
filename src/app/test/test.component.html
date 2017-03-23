@@ -1,5 +1,18 @@
 <div class="content">
-    <h1>{{testItem?.name}}</h1>
+    <div class="grid-noGutter grid-middle test-header">
+        <div class="col-9">
+            <h1 class="text-center">
+                {{testItem?.name}}
+            </h1>
+        </div>
+        <div class="col-3 text-center">
+            <span>Pozostały czas: {{totalTime}}</span>
+        </div>
+    </div>
 
-    <test-question-switcher *ngIf="testItem" [test]="testItem"></test-question-switcher>
+    <test-question-switcher 
+        *ngIf="testItem" 
+        [test]="testItem"
+        (onTotalTimeChanged)="onTotalTimeChanged($event)">
+    </test-question-switcher>
 </div>

@@ -1,12 +1,12 @@
 import { Component, OnInit, EventEmitter, Input, Output }   from '@angular/core';
-import { TestQuestion }                                     from './shared/test-question.model'
+import { TestQuestion }                                     from './shared/test-question.model';
 import { TestDataService }                                  from '../shared/test-data.service';
 
 @Component({
     moduleId: module.id,
     selector: 'test-question',
     templateUrl: './test-question.component.html',
-    styleUrls: [ './test-question.component.css' ]
+    styleUrls: [ '../test.component.css' ]
 })
 export class TestQuestionComponent implements OnInit {
     @Input() testQuestion: TestQuestion

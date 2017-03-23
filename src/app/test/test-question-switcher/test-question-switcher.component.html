@@ -1,8 +1,4 @@
 <div *ngIf="test">
-    <div>
-        {{totalTimeMinutes}}
-    </div>
-
     <ng-container *ngFor="let question of randomizedQuestions; let i = index">
         <test-question
             *ngIf="i === actualQuestionIterator"

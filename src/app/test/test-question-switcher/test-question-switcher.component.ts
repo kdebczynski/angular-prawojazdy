@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, OnDestroy }      from '@angular/core';
-import { Router }                                   from '@angular/router';
+import { Component, OnInit, Input, OnDestroy, Output, EventEmitter }    from '@angular/core';
+import { Router }                                                       from '@angular/router';
 
 import { TestQuestionType }              from '../../app-config';
 import { Test }                         from '../shared/test.model';
@@ -11,12 +11,12 @@ import { TestAnswerStoreService }       from '../shared/test-answer-store.servic
     moduleId: module.id,
     selector: 'test-question-switcher',
     templateUrl: './test-question-switcher.component.html',
-    styleUrls: [ './test-question-switcher.component.css' ],
+    styleUrls: [ '../test.component.css' ],
     providers: [ TestDataService ]
 })
 export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
-    @Input()
-    test: Test
+    @Input() test: Test
+    @Output() onTotalTimeChanged = new EventEmitter<string>()
 
     randomizedQuestions: TestQuestion[]
     actualQuestionIterator: number
@@ -73,7 +73,7 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
     private start() {
         this.nextQuestion()
         this.totalTime = this.testDataService.getTotalTime(this.test.questions)
-        this.totalTimeMinutes = this.testDataService.millisecondsToTime(this.totalTime)
+        this.setTotalTimeMinutes(this.totalTime)
         this.startInterval()
     }
 
@@ -96,13 +96,18 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
     private startInterval() {
         this.interval = setInterval(() => {
             this.totalTime -= 1000
-            this.totalTimeMinutes = this.testDataService.millisecondsToTime(this.totalTime)
+            this.setTotalTimeMinutes(this.totalTime)
             this.checkQuestionTime(this.actualQuestion)
 
             if (this.totalTime <= 0) {
                 clearInterval(this.interval)
             }
         }, 1000)
+    }
+
+    private setTotalTimeMinutes(totalTime: number) {
+        this.totalTimeMinutes = this.testDataService.millisecondsToTime(totalTime)
+        this.onTotalTimeChanged.emit(this.totalTimeMinutes)
     }
 
     private setQuestionTime(question: TestQuestion) {
