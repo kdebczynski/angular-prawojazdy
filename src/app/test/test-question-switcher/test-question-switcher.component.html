@@ -1,6 +1,7 @@
-<div *ngIf="test">
+<div class="flex flex__item flex__item--grow test-question-switcher" *ngIf="test">
     <ng-container *ngFor="let question of randomizedQuestions; let i = index">
         <test-question
+            class="flex flex__item width-1-of-1"
             *ngIf="i === actualQuestionIterator"
             (onRead)="onQuestionRead($event)"
             (onAnswer)="onQuestionAnsweared($event)"

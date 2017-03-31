@@ -1,16 +1,17 @@
-<div class="content">
-    <div class="grid-noGutter grid-middle test-header">
-        <div class="col-9">
+<div class="flex flex--column content">
+    <div class="flex__item flex flex--center test-header">
+        <div class="flex__item width-5-of-6">
             <h1 class="text-center">
                 {{testItem?.name}}
             </h1>
         </div>
-        <div class="col-3 text-center">
+        <div class="flex__item width-1-of-6 text-center">
             <span>Pozostały czas: {{totalTime}}</span>
         </div>
     </div>
 
     <test-question-switcher 
+        class="flex flex__item flex__item--grow"
         *ngIf="testItem" 
         [test]="testItem"
         (onTotalTimeChanged)="onTotalTimeChanged($event)">

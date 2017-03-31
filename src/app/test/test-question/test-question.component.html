@@ -1,25 +1,27 @@
-<div class="grid-noGutter">
-    <div class="col-9 test-question">
-        <h3 class="text-center">{{testQuestion.title}}</h3>
-        <p>{{testQuestion.question}}</p>
+<div class="test flex flex--stretch flex__item  width-1-of-1">
+    <div class="flex__item width-5-of-6 test-question">
+        <div class="test-question__wrapper">
+            <h3 class="text-center">{{testQuestion.title}}</h3>
+            <p>{{testQuestion.question}}</p>
 
-        <button *ngIf="actualQuestionPhase === 'READ'"
-            (click)="read(true)">
-            Odpowiedz
-        </button>
-
-        <div *ngIf="actualQuestionPhase === 'ANSWER'">
-            <button *ngFor="let qAnswer of testQuestion.answers; let i = index"
-                (click)="answer(qAnswer, i)"
-                [disabled]="answered">
-                {{qAnswer}}
+            <button *ngIf="actualQuestionPhase === 'READ'"
+                (click)="read(true)">
+                Odpowiedz
             </button>
+
+            <div *ngIf="actualQuestionPhase === 'ANSWER'">
+                <button *ngFor="let qAnswer of testQuestion.answers; let i = index"
+                    (click)="answer(qAnswer, i)"
+                    [disabled]="answered">
+                    {{qAnswer}}
+                </button>
+            </div>
         </div>
     </div>
-    <div class="col-3">
-        <div class="test-tools">
-            <div class="grid-noGutter question-info">
-                <div class="col">
+    <div class="flex__item width-1-of-6 test-tools">
+        <div class="test-tools__wrapper">
+            <div class="flex question-info">
+                <div class="flex__item width-2-of-3">
                     <span *ngIf="testQuestion.type === 0">
                         Pytanie Proste
                     </span>
@@ -27,12 +29,12 @@
                         Pytanie Zaawansowane
                     </span>
                 </div>
-                <div class="col">
+                <div class="flex__item width-1-of-3 text-right">
                     Punkty: {{testQuestion.importance}}
                 </div>
             </div>
             <div class="question-time">
-                <div class="" *ngIf="actualQuestionPhase === 'READ'">
+                <div *ngIf="actualQuestionPhase === 'READ'">
                     <p>Czas na przeczytanie pytania: {{millisecondsToTime(actualReadTime)}}</p>
                     <ngb-progressbar 
                         type="success" 
