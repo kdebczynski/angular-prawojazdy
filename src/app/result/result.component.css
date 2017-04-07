@@ -1,0 +1,16 @@
+.content h2 {
+    padding: 10px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 25px;
+    margin: 30px 0 10px 0;
+}
+
+.result-icon {
+    width: 200px;
+    height: 200px;
+    font-size: 200px;
+}

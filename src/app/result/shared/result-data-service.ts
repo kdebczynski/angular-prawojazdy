@@ -34,12 +34,31 @@ export class ResultDataService {
         return results
     }
 
+    filterResultsByCorrect(results: Array<Result>, correct: Boolean): Array<Result> {
+        return results.filter((result) => {
+            return result.isCorrect === correct
+        })
+    }
+
     isResultCorrect(correctAnswers: Array<Number>, userAnswers: Array<Number>): Boolean {
         return _.difference(correctAnswers, userAnswers).length === 0
     }
 
-    getAnswersNames(answersIndexed: Array<Number>): String {
-        return 'Tak'
+   getAnswerName(answers: Array<number>, type: number): string {
+        let answersStrings = []
+        let availableAnswers = []
+
+        if (type === 0) {
+            availableAnswers = TestQuestionAnswers['SIMPLE']
+        } else if (type === 1) {
+            availableAnswers = TestQuestionAnswers['ADVANCED']
+        }
+
+        answers.forEach((answer, i) => {
+            answersStrings.push(availableAnswers[answer])
+        })
+
+        return answersStrings.join(', ')
     }
 
     countPoints(results: Array<Result>): Number {

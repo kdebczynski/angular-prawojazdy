@@ -101,6 +101,7 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
 
             if (this.totalTime <= 0) {
                 clearInterval(this.interval)
+                this.nextQuestion()
             }
         }, 1000)
     }

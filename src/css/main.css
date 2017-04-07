@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: normal;
 }
 
 .content {
@@ -16,3 +17,49 @@ body {
         margin: 0;
         padding: 0;
     }
+
+    .content h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content__header {
+        background-color: #0084d7;
+        color: #ffffff;
+        padding: 20px;
+    }
+
+.icon--link-light-grey {
+    color: #ededed;
+}
+
+.icon--link-light-grey:hover {
+    color: #ffffff;
+}
+
+ngb-accordion .card-header a {
+    display: block;
+}
+
+ngb-accordion .card-header.active a,
+ngb-accordion .card-header a:focus,
+ngb-accordion .card-header a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .content__header {
+        padding: 20px 10px;
+        height: 65px;
+    }
+    
+    .content__header h1 {
+        font-size: 26px;
+    }
+
+    .content__header .icon--link-light-grey i {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+    }
+}

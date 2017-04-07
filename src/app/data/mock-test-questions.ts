@@ -386,12 +386,12 @@ export class InMemoryTestService implements InMemoryDbService {
                     {
                         id: 1,
                         title: 'Pytanie 1',
-                        type: TestQuestionType.Simple,
-                        readTime: TestQuestionTime.SimpleRead,
-                        importance: TestQuestionImportance.Low,
-                        answerTime: TestQuestionTime.SimpleAnswer,
+                        type: TestQuestionType.Advanced,
+                        importance: TestQuestionImportance.High,
+                        readTime: TestQuestionTime.AdvancedRead,
+                        answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q',
-                        answers: ['A', 'B', 'C'],
+                        answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     }
                 ]

@@ -1,10 +1,44 @@
 <div class="content">
-    <h1>Wyniki</h1>
+    <div class="content__header flex flex--align-center">
+        <a class="flex__item icon--link-light-grey p-right-20 p-top-05" routerLink="/welcome">
+            <i class="material-icons">arrow_back</i>
+        </a>
+        <h1 class="flex__item flex__item--grow">
+            Wyniki
+        </h1>
+    </div>
 
-    <h2>
-        <span *ngIf="isPassed">Zdałes</span>
-        <span *ngIf="!isPassed">Nie zdałes</span>
+    <h2 class="text-center">
+        <span *ngIf="isPassed">
+            Zdałes
+        </span>
+        <span *ngIf="!isPassed">
+            Nie zdałes
+        </span>
     </h2>
 
-    <p>Uzyskałeś {{points}} punkty</p>
+    <div class="text-center">
+        <i *ngIf="isPassed" class="result-icon material-icons color--green">sentiment_satisfied</i>
+        <i *ngIf="!isPassed" class="result-icon material-icons color--red">sentiment_very_dissatisfied</i> 
+    </div>
+
+    <p class="text-center fs-20">Uzyskałeś {{points}} punkty</p>
+
+    <div *ngIf="wrongResults.length">
+        <h3 class="text-center">
+            Błędne odpowiedzi:
+        </h3>
+
+        <ngb-accordion #acc="ngbAccordion">
+            <ngb-panel
+                *ngFor="let result of wrongResults; let i = index"
+                title="{{result.questionTitle}}" id="{{i}}">
+                <template ngbPanelContent>
+                    <p>{{result.question}}</p>
+                    <p><b>Twoj odpowiedź:</b> {{getAnswerName(result.userAnswers, result.type)}}</p>
+                    <p><b>Poprawna odpowiedź:</b> {{getAnswerName(result.correctAnswers, result.type)}}</p>
+                </template>
+            </ngb-panel>
+        </ngb-accordion>
+    </div>
 </div>
