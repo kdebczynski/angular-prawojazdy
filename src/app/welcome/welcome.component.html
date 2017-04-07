@@ -1,13 +1,18 @@
-<div class="content">
-    <div class="content__header">
+<div class="flex flex--column content">
+    <div class="flex__item content__header width-1-of-1">
         <h1 class="text-center">
             Prawo Jazdy
         </h1>
     </div>
 
-    <ul>
-        <li *ngFor="let test of tests">
-            <a routerLink="/test/{{test.id}}">{{test.name}}</a>
-        </li>
-    </ul>
+    <div class="content__body flex flex--stretch flex__item width-1-of-1">
+        <div class="content__body-wrapper flex__item flex__item--grow width-1-of-1">
+            <ul>
+                <li *ngFor="let test of tests">
+                    <a routerLink="/test/{{test.id}}">{{test.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 </div>

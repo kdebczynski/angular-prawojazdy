@@ -8,12 +8,12 @@ test-question-switcher {
 }
 
 .test-question {
-    padding: 20px 20px 70px 20px;
+    padding: 85px 20px 70px 20px;
     position: relative;
 }
 
     .test-question h3 {
-        margin: 0 0 20px 0;
+        margin: 20px 0 20px 0;
         padding: 0 0 20px 0;
         border-bottom: 1px solid #d0d0d0;
     }
@@ -34,6 +34,7 @@ test-question-switcher {
     }
 
 .test-tools {
+    padding: 85px 0 0 0;
     background-color: #6b60d4;
     color: #ffffff;
 }
@@ -53,28 +54,22 @@ test-question-switcher {
 
 
 @media screen and (max-width: 768px) {
-    .test-header, .test-tools, .test-question {
+    .test-tools, .test-question {
         width: 100%;
+        padding: 0;
     }
 
-    .test-header {
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
+    .test-header span {
+        font-size: 14px;
     }
 
-        .test-header span {
-            font-size: 14px;
-        }
+    .test-header .width-5-of-6 {
+        width: 66.66%
+    }
 
-        .test-header .width-5-of-6 {
-            width: 66.66%
-        }
-
-        .test-header .width-1-of-6 {
-            width: 33.33%;
-        }
+    .test-header .width-1-of-6 {
+        width: 33.33%;
+    }
 
     .test {
         flex-direction: column;

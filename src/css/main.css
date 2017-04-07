@@ -24,9 +24,22 @@ body {
     }
 
     .content__header {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
         background-color: #0084d7;
         color: #ffffff;
         padding: 20px;
+        height: 85px;
+    }
+
+    .content__body {
+        padding: 85px 0 0 0;
+    }
+
+    .content__body-wrapper {
+        overflow: auto;
     }
 
 .icon--link-light-grey {
@@ -41,6 +54,12 @@ ngb-accordion .card-header a {
     display: block;
 }
 
+ngb-accordion .card-header a i {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+}
+
 ngb-accordion .card-header.active a,
 ngb-accordion .card-header a:focus,
 ngb-accordion .card-header a:hover {
@@ -51,6 +70,7 @@ ngb-accordion .card-header a:hover {
     .content__header {
         padding: 20px 10px;
         height: 65px;
+        width: 100%;
     }
     
     .content__header h1 {
@@ -61,5 +81,9 @@ ngb-accordion .card-header a:hover {
         width: 20px;
         height: 20px;
         font-size: 20px;
+    }
+
+    .content__body {
+        padding: 65px 0 0 0;
     }
 }

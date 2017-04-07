@@ -44,7 +44,7 @@ export class ResultDataService {
         return _.difference(correctAnswers, userAnswers).length === 0
     }
 
-   getAnswerName(answers: Array<number>, type: number): string {
+    getAnswerName(answers: Array<number>, type: number): string {
         let answersStrings = []
         let availableAnswers = []
 

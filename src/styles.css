@@ -1,4 +1,5 @@
 @import "./css/helpers.css";
 @import "./css/main.css";
+@import "./css/loader.css";
 @import "./css/responsive.css";
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';

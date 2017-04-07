@@ -11,7 +11,14 @@
                     Odpowiedz
                 </button>
 
-                <div *ngIf="actualQuestionPhase === 'ANSWER'">
+                <button *ngIf="isnsweared"
+                    class="btn btn-primary"
+                    (click)="next(true)">
+                    Następne pytanie
+                    ({{nextQuestionTime / 1000}})
+                </button>
+
+                <div *ngIf="actualQuestionPhase === 'ANSWER' && !isnsweared">
                     <button *ngFor="let qAnswer of testQuestion.answers; let i = index"
                         class="btn btn-primary"
                         (click)="answer(qAnswer, i)"

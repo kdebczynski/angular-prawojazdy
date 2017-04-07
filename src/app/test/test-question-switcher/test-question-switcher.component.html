@@ -5,10 +5,12 @@
             *ngIf="i === actualQuestionIterator"
             (onRead)="onQuestionRead($event)"
             (onAnswer)="onQuestionAnsweared($event)"
+            (onNext)="onNextQuestion($event)"
             [testQuestion]="question"
             [actualQuestionPhase]="actualQuestionPhase"
             [actualReadTime]="actualQuestionReadTime"
-            [actualAnswerTime]="actualQuestionAnswerTime">
+            [actualAnswerTime]="actualQuestionAnswerTime"
+            [nextQuestionTime]="nextQuestionTime">
         </test-question>
     </ng-container>
 </div>
