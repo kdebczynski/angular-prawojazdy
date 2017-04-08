@@ -41,7 +41,10 @@
                             <span>{{result.questionTitle}}</span>
                         </template>
                         <template ngbPanelContent>
-                            <p>{{result.question}}</p>
+                            <p><b>Pytanie:</b> {{result.question}}</p>
+                            <div class="test-question__media">
+                                <img src="{{result.media}}" />
+                            </div>
                             <p><b>Twoj odpowiedź:</b> {{getAnswerName(result.userAnswers, result.type)}}</p>
                             <p><b>Poprawna odpowiedź:</b> {{getAnswerName(result.correctAnswers, result.type)}}</p>
                         </template>

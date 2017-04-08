@@ -23,6 +23,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '../../assets/test1/1.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -34,6 +35,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -45,6 +47,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -56,6 +59,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -69,6 +73,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -80,6 +85,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -91,6 +97,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -102,6 +109,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -113,6 +121,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -123,7 +132,8 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
+                        question: 'q 1', 
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -137,6 +147,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -148,6 +159,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -159,6 +171,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -170,6 +183,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -181,6 +195,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -192,6 +207,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -203,6 +219,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -214,6 +231,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -225,6 +243,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -236,6 +255,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     },
@@ -249,6 +269,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -260,6 +281,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -273,6 +295,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -284,6 +307,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -295,6 +319,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -306,6 +331,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -319,6 +345,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -330,6 +357,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -341,6 +369,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -352,6 +381,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -363,6 +393,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -374,6 +405,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'q 1',
+                        media: '',
                         answers: TestQuestionAnswers.ADVANCED,
                         correctAnswers: [1]
                     },
@@ -386,12 +418,25 @@ export class InMemoryTestService implements InMemoryDbService {
                     {
                         id: 1,
                         title: 'Pytanie 1',
-                        type: TestQuestionType.Advanced,
+                        type: TestQuestionType.Simple,
                         importance: TestQuestionImportance.High,
-                        readTime: TestQuestionTime.AdvancedRead,
-                        answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q',
-                        answers: TestQuestionAnswers.ADVANCED,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'Czy widoczna linia złożona z trójkątów wskazuje Ci miejce zatrzymania pojazdu w celu ustąpienia pierwszeństwa?',
+                        media: '../../assets/test1/1.jpg',
+                        answers: TestQuestionAnswers.SIMPLE,
+                        correctAnswers: [0]
+                    },
+                    {
+                        id: 2,
+                        title: 'Pytanie 2',
+                        type: TestQuestionType.Simple,
+                        importance: TestQuestionImportance.Medium,
+                        readTime: TestQuestionTime.SimpleRead,
+                        answerTime: TestQuestionTime.SimpleAnswer,
+                        question: 'Czy w przedstawionej sytuacji odległość znaku ostrzegawczego od miejsca niebezpiecznego wynosi od 150 do 300 metrów?',
+                        media: '../../assets/test1/2.jpg',
+                        answers: TestQuestionAnswers.SIMPLE,
                         correctAnswers: [1]
                     }
                 ]

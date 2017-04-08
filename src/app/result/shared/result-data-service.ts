@@ -23,6 +23,7 @@ export class ResultDataService {
             results.push({
                 questionTitle: question.title,
                 question: question.question,
+                media: question.media,
                 type: question.type,
                 importance: question.importance,
                 userAnswers: answer.answersIndexes,

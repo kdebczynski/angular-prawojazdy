@@ -8,6 +8,7 @@ export class TestQuestion {
     id: number
     title: string
     question: string
+    media: string
     type: TestQuestionType
     importance: TestQuestionImportance
     readTime: number

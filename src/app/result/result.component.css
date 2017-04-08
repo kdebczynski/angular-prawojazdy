@@ -14,3 +14,7 @@
     height: 200px;
     font-size: 200px;
 }
+
+ngb-accordion p {
+    margin: 0 0 5px 0;
+}

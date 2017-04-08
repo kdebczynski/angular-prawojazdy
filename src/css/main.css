@@ -42,6 +42,18 @@ body {
         overflow: auto;
     }
 
+    .test-question__media {
+        text-align: center;
+        height: 500px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .test-question__media img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
 .icon--link-light-grey {
     color: #ededed;
 }
@@ -86,4 +98,8 @@ ngb-accordion .card-header a:hover {
     .content__body {
         padding: 65px 0 0 0;
     }
+
+        .test-question__media {
+            height: auto;
+        }
 }

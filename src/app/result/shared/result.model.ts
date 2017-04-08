@@ -6,6 +6,7 @@ import {
 export class Result {
     questionTitle: string
     question: string
+    media: string
     type: TestQuestionType
     importance: TestQuestionImportance
     userAnswers: Array<number>

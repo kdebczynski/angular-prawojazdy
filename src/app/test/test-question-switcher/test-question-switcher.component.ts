@@ -99,7 +99,7 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
             }
         } else {
             clearInterval(this.testInterval)
-            this.router.navigate(['/result', this.test.id]);
+            this.router.navigate(['/result', this.test.id])
         }
 
         this.startTestInterval()
@@ -181,6 +181,11 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
         this.testAnswerStoreService.addAnswer(this.test.id, this.actualQuestion.id, answear)
         this.isQuestionAnsweared = true
         clearInterval(this.testInterval)
-        this.startNextQuestionInterval()
+
+        if (this.actualQuestionIterator === this.test.questions.length -1) {
+            this.router.navigate(['/result', this.test.id])
+        } else {
+            this.startNextQuestionInterval()
+        }
     }
 }
