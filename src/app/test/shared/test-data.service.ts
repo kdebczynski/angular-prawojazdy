@@ -42,11 +42,23 @@ export class TestDataService {
     }
 
     millisecondsToTime(milli: number): string {
-        let milliseconds = milli % 1000
-        let seconds = Math.floor((milli / 1000) % 60)
-        let minutes = Math.floor((milli / (60 * 1000)) % 60)
+        //Get hours from milliseconds
+        var hours = milli / (1000*60*60);
+        var absoluteHours = Math.floor(hours);
+        var h = absoluteHours > 9 ? absoluteHours : '0' + absoluteHours;
 
-        return minutes + ":" + seconds
+        //Get remainder from hours and convert to minutes
+        var minutes = (hours - absoluteHours) * 60;
+        var absoluteMinutes = Math.floor(minutes);
+        var m = absoluteMinutes > 9 ? absoluteMinutes : '0' +  absoluteMinutes;
+
+        //Get remainder from minutes and convert to seconds
+        var seconds = (minutes - absoluteMinutes) * 60;
+        var absoluteSeconds = Math.floor(seconds);
+        var s = absoluteSeconds > 9 ? absoluteSeconds : '0' + absoluteSeconds;
+
+        return m + ':' + s;
+
     }
 
 }

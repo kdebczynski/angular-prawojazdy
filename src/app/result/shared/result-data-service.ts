@@ -27,6 +27,8 @@ export class ResultDataService {
                 type: question.type,
                 importance: question.importance,
                 userAnswers: answer.answersIndexes,
+                answers: question.answers,
+                answersStr: question.answersStr,
                 correctAnswers: question.correctAnswers,
                 isCorrect: this.isResultCorrect(question.correctAnswers, answer.answersIndexes)
             })

@@ -13,7 +13,6 @@ export class TestQuestionComponent implements OnInit {
     @Input() actualReadTime: number
     @Input() actualAnswerTime: number
     @Input() actualQuestionPhase: string
-    @Input() nextQuestionTime: number
     @Output() onRead = new EventEmitter<boolean>()
     @Output() onAnswer = new EventEmitter<number>()
     @Output() onNext = new EventEmitter<boolean>()

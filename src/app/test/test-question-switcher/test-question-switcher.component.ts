@@ -25,12 +25,10 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
     actualQuestionAnswerTime: number
     actualQuestionPhase: string
     isQuestionAnsweared: boolean
-    nextQuestionTime: number
 
     private totalTime: number
     private actualQuestion: TestQuestion
     private testInterval
-    private nextQuestionInterval
     private intervalValue: number = 1000
 
     readonly questionPhases: Array<string> = ['READ', 'ANSWER']
@@ -43,7 +41,6 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
 
     ngOnInit() {
         clearInterval(this.testInterval)
-        clearInterval(this.nextQuestionInterval)
         this.actualQuestionIterator = -1
         this.totalTime = 0
         this.totalTimeMinutes = undefined
@@ -59,7 +56,6 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
 
     ngOnDestroy() {
         clearInterval(this.testInterval)
-        clearInterval(this.nextQuestionInterval)
     }
 
 
@@ -80,12 +76,12 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
 
     private start() {
         this.nextQuestion()
+        this.startTestInterval()
         this.totalTime = this.testDataService.getTotalTime(this.test.questions)
         this.setTotalTimeMinutes(this.totalTime)
     }
 
     private nextQuestion() {
-        clearInterval(this.nextQuestionInterval)
         this.isQuestionAnsweared = false
         
         if (this.actualQuestionIterator < this.test.questions.length -1) {
@@ -101,8 +97,6 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
             clearInterval(this.testInterval)
             this.router.navigate(['/result', this.test.id])
         }
-
-        this.startTestInterval()
     }
 
     private startTestInterval() {
@@ -117,19 +111,6 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
                 this.nextQuestion()
             }
         }, this.intervalValue)
-    }
-
-    private startNextQuestionInterval() {
-        this.nextQuestionTime = 5000
-
-        this.nextQuestionInterval = setInterval(() => {
-            this.nextQuestionTime -= 1000
-
-            if (this.nextQuestionTime <= 0) {
-                clearInterval(this.nextQuestionInterval)
-                this.nextQuestion()
-            }
-        }, 1000)
     }
 
     private setTotalTimeMinutes(totalTime: number) {
@@ -158,15 +139,17 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
                 this.actualQuestionAnswerTime -= this.intervalValue
             } else {
                 // no answear
-                this.answaerToQuestion([])
+                if (!this.isQuestionAnsweared) {
+                    this.answaerToQuestion([])
+                }
+                
+                this.nextQuestion()
             }
         }
     }
 
     private onQuestionRead(agreed: boolean) {
         this.actualQuestionPhase = this.questionPhases[1]
-        clearInterval(this.testInterval)
-        this.startTestInterval()
     }
 
     private onQuestionAnsweared(index: number) {
@@ -180,12 +163,9 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
     private answaerToQuestion(answear: Array<number>) {
         this.testAnswerStoreService.addAnswer(this.test.id, this.actualQuestion.id, answear)
         this.isQuestionAnsweared = true
-        clearInterval(this.testInterval)
 
         if (this.actualQuestionIterator === this.test.questions.length -1) {
             this.router.navigate(['/result', this.test.id])
-        } else {
-            this.startNextQuestionInterval()
         }
     }
 }

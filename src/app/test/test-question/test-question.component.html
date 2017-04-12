@@ -2,12 +2,23 @@
     <div class="flex flex__item flex__item--grow width-5-of-6 test-question">
         <div class="flex__item width-1-of-1 test-question__wrapper">                 
             <!-- h3 class="text-center">{{testQuestion.title}}</h3 -->
-            <p class="test-question__question"><b>Pytanie</b>: {{testQuestion.question}}</p>
+            <div class="test-question__question">
+                <b>Pytanie:</b> {{testQuestion.question}}
+                <ul class="list list--simple" 
+                    *ngIf="testQuestion.answersStr.length && actualQuestionPhase === 'ANSWER'">
+                    <li *ngFor="let qAnswerStr of testQuestion.answersStr; let i = index">
+                        <span>{{testQuestion.answers[i]}}. </span>
+                        <span>{{qAnswerStr}}</span>
+                    </li>
+                </ul>
+            </div>
             
             <div class="test-question__media"
                 *ngIf="actualQuestionPhase === 'ANSWER'">
                 <img src="{{testQuestion.media}}" />
             </div>
+
+            
 
             <div class="test-question__buttons text-center">
                 <button *ngIf="actualQuestionPhase === 'READ'"
@@ -20,7 +31,7 @@
                     class="btn btn-primary"
                     (click)="next(true)">
                     Następne pytanie
-                    ({{nextQuestionTime / 1000}})
+                    ({{millisecondsToTime(actualAnswerTime)}})
                 </button>
 
                 <div *ngIf="actualQuestionPhase === 'ANSWER' && !isnsweared">

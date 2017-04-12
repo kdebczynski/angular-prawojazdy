@@ -14,5 +14,6 @@ export class TestQuestion {
     readTime: number
     answerTime: number
     answers: Array<string>
+    answersStr: Array<string>
     correctAnswers: Array<number>
 }

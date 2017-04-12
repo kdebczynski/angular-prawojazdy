@@ -9,6 +9,8 @@ export class Result {
     media: string
     type: TestQuestionType
     importance: TestQuestionImportance
+    answers: Array<string>
+    answersStr: Array<string>
     userAnswers: Array<number>
     correctAnswers: Array<number>
     isCorrect: Boolean

@@ -42,6 +42,12 @@
                         </template>
                         <template ngbPanelContent>
                             <p><b>Pytanie:</b> {{result.question}}</p>
+                            <ul class="list list--simple">
+                                <li *ngFor="let qAnswerStr of result.answersStr; let i = index">
+                                    <span>{{result.answers[i]}}. </span>
+                                    <span>{{qAnswerStr}}</span>
+                                </li>
+                            </ul>
                             <div class="test-question__media">
                                 <img src="{{result.media}}" />
                             </div>

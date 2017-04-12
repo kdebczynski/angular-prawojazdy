@@ -25,6 +25,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '../../assets/test1/1.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -37,6 +38,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -49,6 +51,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -61,6 +64,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
 
@@ -75,6 +79,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -87,6 +92,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -99,6 +105,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -111,6 +118,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -123,6 +131,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -135,6 +144,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1', 
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
 
@@ -149,6 +159,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -161,6 +172,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -173,6 +185,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -185,6 +198,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -197,6 +211,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -209,6 +224,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -221,6 +237,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -233,6 +250,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -245,6 +263,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
                     {
@@ -257,6 +276,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'q 1',
                         media: '',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     },
 
@@ -268,9 +288,14 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Low,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Co może być efektem nieszczelności układu wydechowego',
+                        media: '../../assets/test1/s7.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
+                        answersStr: [
+                            'Ubytek płynu chłodzącego',
+                            'Wzrost hałasu generowanego przez tłumik',
+                            'Wolniejsze zużywanie się oleju silnikowego'
+                        ],
                         correctAnswers: [1]
                     },
                     {
@@ -280,10 +305,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Low,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Który z dokumentów masz obowiązek posiadać przy sobie kierując pojazdem samochodowym zarejestrowanym w Polsce?',
+                        media: '../../assets/test1/s8.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Kartę pojazdu.',
+                            'Umowę kupna pojazdu',
+                            'Dowód rejestracyjny pojazdu'
+                        ],
+                        correctAnswers: [2]
                     },
 
                     // Advance; Medium
@@ -294,10 +324,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'W jakich warunkach masz prwo włączyć światła przeciwmgłowe?',
+                        media: '../../assets/test1/s4.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Gdy widoczność w obfitym deszczu jest ograniczona do 60 m.',
+                            'Gdy widocznośc w gęstej mgle jest ograniczona do 100 m.',
+                            'Gdy widoczność podczas opadów śniegu jest mniejsza niż 50 m.'
+                        ],
+                        correctAnswers: [2]
                     },
                     {
                         id: 24,
@@ -306,10 +341,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'W jaki sposób należy obserwować otoczenie podczas jazdy po autostradzie?',
+                        media: '../../assets/test1/s5.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Patrzeć wyłącznie do przodu.',
+                            'Poświęcać tyle samo uwagi na obserwację drogi przed i za pojazdem.',
+                            'Patrzeć do przodu i regularnie kontrolować drogę za pojazdem w lusterkach wstecznych.'
+                        ],
+                        correctAnswers: [2]
                     },
                     {
                         id: 25,
@@ -318,10 +358,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Co należy sprawdzić, gdy lampka kontrolna kierunkowskazów zaczęła migać dużo szybciej?',
+                        media: '../../assets/test1/s9.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Napięcie akumulatora.',
+                            'Sprawność bezpieczników.',
+                            'Sprawność żarówek kierunkowskazów.'
+                        ],
+                        correctAnswers: [2]
                     },
                     {
                         id: 26,
@@ -330,10 +375,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'W jaki sposób ustawisz fotel kierowcy przed jazdą?',
+                        media: '../../assets/test1/s10.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Tak, aby umożliwiał swobodny dostęp do urządzeń pojazdu służących do kierowania i sterowania nim.',
+                            'Tak, aby plecy nie przylegały do oparcia.',
+                            'Tak, aby ręce trzymające kierownicą były całkowicie wyprostowane w łokciach.'
+                        ],
+                        correctAnswers: [0]
                     },
 
                     // Advance; High
@@ -344,10 +394,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Kiedy na obszarze zabudowanym obowiązuje dopuszczalna prędkość 50 km/h?',
+                        media: '../../assets/test1/s1.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Od zmierzchu do świtu.',
+                            'Od godziny 23:00 do 5:00',
+                            'Od godziny 5:00 do 23:00'
+                        ],
+                        correctAnswers: [2]
                     },
                     {
                         id: 28,
@@ -356,10 +411,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Który z wymienionych skutków może zostać wywołany przez kontynuowanie jazdy przy świecącej się na czerwono lampce kontrolnej cisnienia oleju silnikowego?',
+                        media: '../../assets/test1/s2.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Poważne uszkodzenie silnika.',
+                            'Uszkodzenie hamulców.',
+                            'Uszkodzenie mechanizmów przeniesienia napędu.'
+                        ],
+                        correctAnswers: [0]
                     },
                     {
                         id: 29,
@@ -368,10 +428,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Jaki odstęp należy zachować podczas wyprzedzania motocykla?',
+                        media: '../../assets/test1/s3.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Bezpieczny, ale nie większy niż 0,5 metra.',
+                            'Bezpieczny, ale nie większy niż 1 metr',
+                            'Bezpieczny, ale nie mniejszy niż 1 metr'
+                        ],
+                        correctAnswers: [2]
                     },
                     {
                         id: 30,
@@ -380,10 +445,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Co jest niewskazane podczas jazdy czterokołowcem na zakręcie?',
+                        media: '../../assets/test1/s6.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Utrzymywanie niewielkiej stałej prędkości jazdy.',
+                            'Pochylanie się w stronę zakrętu.',
+                            'Nagłe zamknięcie lub otwarcie przepustnicy'
+                        ],
+                        correctAnswers: [2]
                     },
                     {
                         id: 31,
@@ -392,10 +462,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Dlaczego układanie na boku osób nieprzytomnych i oddychających jest bezpieczne?',
+                        media: '../../assets/test1/s11.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Ponieważ zapewnia poszkodowanemu największy komfort oczekiwania na pogotowie.',
+                            'Ponieważ zabezpiecza przed urazami kręgosłupa szyjnego.',
+                            'Ponieważ zapobiega niedrożności dróg oddechowych i zachłyśnięciu.'
+                        ],
+                        correctAnswers: [2]
                     },
                     {
                         id: 32,
@@ -404,10 +479,15 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Jesteś uczestnikiem lub świakdkiem wypadku drogowego. Które z wymienionych informacji należy podać dzwoniąc pod numer alarmowy?',
+                        media: '../../assets/test1/s12.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
-                        correctAnswers: [1]
+                        answersStr: [
+                            'Miejsce zdarzenia oraz liczbę i stan ofiar wypadku.',
+                            'Tylko liczbę pojazdów biorących udział w wypadku',
+                            'Tylko liczbę ofiar wypadku'
+                        ],
+                        correctAnswers: [0]
                     },
                 ]
             },
@@ -425,6 +505,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'Czy widoczna linia złożona z trójkątów wskazuje Ci miejce zatrzymania pojazdu w celu ustąpienia pierwszeństwa?',
                         media: '../../assets/test1/1.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [0]
                     },
                     {
@@ -437,6 +518,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         question: 'Czy w przedstawionej sytuacji odległość znaku ostrzegawczego od miejsca niebezpiecznego wynosi od 150 do 300 metrów?',
                         media: '../../assets/test1/2.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
+                        answersStr: [],
                         correctAnswers: [1]
                     }
                 ]
