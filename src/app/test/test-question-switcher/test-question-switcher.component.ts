@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, OnDestroy, Output, EventEmitter }    from '@angular/core';
 import { Router }                                                       from '@angular/router';
 
-import { TestQuestionType }              from '../../app-config';
+import { TestQuestionType }             from '../../app-config';
 import { Test }                         from '../shared/test.model';
 import { TestDataService }              from '../shared/test-data.service';
 import { TestQuestion }                 from '../test-question/shared/test-question.model';
@@ -77,17 +77,17 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
     private start() {
         this.nextQuestion()
         this.startTestInterval()
-        this.totalTime = this.testDataService.getTotalTime(this.test.questions)
+        this.totalTime = this.testDataService.getTotalTime(this.randomizedQuestions)
         this.setTotalTimeMinutes(this.totalTime)
     }
 
     private nextQuestion() {
         this.isQuestionAnsweared = false
         
-        if (this.actualQuestionIterator < this.test.questions.length -1) {
+        if (this.actualQuestionIterator < this.randomizedQuestions.length -1) {
             this.actualQuestionPhase = this.questionPhases[0]
             this.actualQuestionIterator++
-            this.actualQuestion = this.test.questions[this.actualQuestionIterator]
+            this.actualQuestion = this.randomizedQuestions[this.actualQuestionIterator]
             this.setQuestionTime(this.actualQuestion)
 
             if (this.actualQuestionReadTime === 0) {
@@ -164,7 +164,7 @@ export class TestQuestionSwitcherComponent implements OnInit, OnDestroy  {
         this.testAnswerStoreService.addAnswer(this.test.id, this.actualQuestion.id, answear)
         this.isQuestionAnsweared = true
 
-        if (this.actualQuestionIterator === this.test.questions.length -1) {
+        if (this.actualQuestionIterator === this.randomizedQuestions.length -1) {
             this.router.navigate(['/result', this.test.id])
         }
     }

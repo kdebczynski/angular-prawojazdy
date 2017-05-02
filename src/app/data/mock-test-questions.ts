@@ -22,11 +22,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Low,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '../../assets/test1/1.jpg',
+                        question: 'Czy wyprzedzając masz prawo użyć sygnału dźwiękowego, jeżeli widoczny pojazd rozpocznie zmianę pasa ruchu?',
+                        media: '../../assets/test1/s18.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 2,
@@ -35,11 +35,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Low,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy umieszczony na tablicy znak ostrzega Cię o miejscu na drodze, w którym występuje lub może występować niebezpieczeństwo?',
+                        media: '../../assets/test1/s17.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 3,
@@ -48,11 +48,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Low,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy w tej sytuacji, jadąc na wrost, jesteś włączającym się do ruchu?',
+                        media: '../../assets/test1/s22.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 4,
@@ -61,11 +61,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Low,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy ze względów bezpieczeństwa wskazane jest, aby używając gaśnicy samochodowej, unikać pełnego otwarcia pokrywy komory silnika?',
+                        media: '../../assets/test1/s29.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
 
                     // Simple; Medium
@@ -76,11 +76,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy widoczny znak poziomy oznacza linię przystankową?',
+                        media: '../../assets/test1/s13.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 6,
@@ -89,8 +89,8 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy na odcinku drogi za widocznym znakiem będziesz ostrzegany o każdym występującym na niej zakręcie?',
+                        media: '../../assets/test1/s15.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -102,11 +102,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy cofanie pojazdem na drodze ekspresowej jest zabronione?',
+                        media: '../../assets/test1/s25.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 8,
@@ -115,11 +115,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy przejeżdżając obok tak zlokalizowanego przystanku tramwajowego, masz obowiązek zachować szczególną ostrożność?',
+                        media: '../../assets/test1/s26.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 9,
@@ -128,11 +128,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy w tej sytuacji należy rozpocząć hamowanie?',
+                        media: '../../assets/test1/s28.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 10,
@@ -141,11 +141,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.Medium,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1', 
-                        media: '',
+                        question: 'Czy zmęczenie może powodować skutki zbliżone do działania alkoholu, takie jak obniżona możliwość koncentracji oraz wydłużony czas reakcji?', 
+                        media: '../../assets/test1/s30.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
 
                     // Simple; High
@@ -156,11 +156,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy w tej sytuacji jestes obowiązany do upewnienia się czy nie nadjeżdza tramwaj?',
+                        media: '../../assets/test1/s14.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 12,
@@ -169,8 +169,8 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy wolno Ci zatrzymać się na odcinku jezdni przed widocznym znakiem w celu wysadzenia pasażera?',
+                        media: '../../assets/test1/s16.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -182,8 +182,8 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Zamierzasz skręcić w lewo. Czy masz pierwszeństwo przed pojazdem nadjeżdżającym z prawej strony?',
+                        media: '../../assets/test1/s32.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -195,11 +195,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Zamierzasz jechać na wprost. Czy masz obowiązek ustąpić pierwszeństwa pojazdowi nadjeżdżającemu z prawej strony?',
+                        media: '../../assets/test1/s19.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 15,
@@ -208,8 +208,8 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy w tej sytuacji możesz skręcić w prawo, jeżeli nie utrudni to ruchu pieszym i pojazdom poruszającym się drogą poprzeczną?',
+                        media: '../../assets/test1/s20.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -221,8 +221,8 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy na obszarze wyznaczonym linią przystankową możesz zatrzymać samochód osobowy w celu zapytania o drogę?',
+                        media: '../../assets/test1/s21.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -234,8 +234,8 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy wolno Ci zawrócić na moście?',
+                        media: '../../assets/test1/s23.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -247,8 +247,8 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy wolno Ci zwiększać prędkość, jeżeli jesteś wyprzedzany przez inny pojazd?',
+                        media: '../../assets/test1/s24.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -260,11 +260,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Czy w tej sytuacji powinieneś być przygotowany do zatrzymania pojazdu?',
+                        media: '../../assets/test1/s27.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
                     {
                         id: 20,
@@ -273,11 +273,11 @@ export class InMemoryTestService implements InMemoryDbService {
                         importance: TestQuestionImportance.High,
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
-                        question: 'q 1',
-                        media: '',
+                        question: 'Zamierzasz kontynuować jazdę widoczną drogą. Czy wjeżdzając na nią jesteś obowiązany ustąpić pierwszeństwa kierującym, którzy sie nią poruszają?',
+                        media: '../../assets/test1/s31.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
-                        correctAnswers: [1]
+                        correctAnswers: [0]
                     },
 
                     // Advance; Low
