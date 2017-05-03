@@ -23,7 +23,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy wyprzedzając masz prawo użyć sygnału dźwiękowego, jeżeli widoczny pojazd rozpocznie zmianę pasa ruchu?',
-                        media: '../../assets/test1/s18.jpg',
+                        media: 'assets/test1/s18.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -36,7 +36,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy umieszczony na tablicy znak ostrzega Cię o miejscu na drodze, w którym występuje lub może występować niebezpieczeństwo?',
-                        media: '../../assets/test1/s17.jpg',
+                        media: 'assets/test1/s17.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -49,7 +49,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy w tej sytuacji, jadąc na wrost, jesteś włączającym się do ruchu?',
-                        media: '../../assets/test1/s22.jpg',
+                        media: 'assets/test1/s22.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -62,7 +62,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy ze względów bezpieczeństwa wskazane jest, aby używając gaśnicy samochodowej, unikać pełnego otwarcia pokrywy komory silnika?',
-                        media: '../../assets/test1/s29.jpg',
+                        media: 'assets/test1/s29.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -77,7 +77,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy widoczny znak poziomy oznacza linię przystankową?',
-                        media: '../../assets/test1/s13.jpg',
+                        media: 'assets/test1/s13.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -90,7 +90,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy na odcinku drogi za widocznym znakiem będziesz ostrzegany o każdym występującym na niej zakręcie?',
-                        media: '../../assets/test1/s15.jpg',
+                        media: 'assets/test1/s15.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -103,7 +103,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy cofanie pojazdem na drodze ekspresowej jest zabronione?',
-                        media: '../../assets/test1/s25.jpg',
+                        media: 'assets/test1/s25.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -116,7 +116,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy przejeżdżając obok tak zlokalizowanego przystanku tramwajowego, masz obowiązek zachować szczególną ostrożność?',
-                        media: '../../assets/test1/s26.jpg',
+                        media: 'assets/test1/s26.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -129,7 +129,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy w tej sytuacji należy rozpocząć hamowanie?',
-                        media: '../../assets/test1/s28.jpg',
+                        media: 'assets/test1/s28.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -142,7 +142,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy zmęczenie może powodować skutki zbliżone do działania alkoholu, takie jak obniżona możliwość koncentracji oraz wydłużony czas reakcji?', 
-                        media: '../../assets/test1/s30.jpg',
+                        media: 'assets/test1/s30.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -157,7 +157,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy w tej sytuacji jestes obowiązany do upewnienia się czy nie nadjeżdza tramwaj?',
-                        media: '../../assets/test1/s14.jpg',
+                        media: 'assets/test1/s14.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -170,7 +170,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy wolno Ci zatrzymać się na odcinku jezdni przed widocznym znakiem w celu wysadzenia pasażera?',
-                        media: '../../assets/test1/s16.jpg',
+                        media: 'assets/test1/s16.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -183,7 +183,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Zamierzasz skręcić w lewo. Czy masz pierwszeństwo przed pojazdem nadjeżdżającym z prawej strony?',
-                        media: '../../assets/test1/s32.jpg',
+                        media: 'assets/test1/s32.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -196,7 +196,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Zamierzasz jechać na wprost. Czy masz obowiązek ustąpić pierwszeństwa pojazdowi nadjeżdżającemu z prawej strony?',
-                        media: '../../assets/test1/s19.jpg',
+                        media: 'assets/test1/s19.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -209,7 +209,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy w tej sytuacji możesz skręcić w prawo, jeżeli nie utrudni to ruchu pieszym i pojazdom poruszającym się drogą poprzeczną?',
-                        media: '../../assets/test1/s20.jpg',
+                        media: 'assets/test1/s20.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -222,7 +222,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy na obszarze wyznaczonym linią przystankową możesz zatrzymać samochód osobowy w celu zapytania o drogę?',
-                        media: '../../assets/test1/s21.jpg',
+                        media: 'assets/test1/s21.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -235,7 +235,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy wolno Ci zawrócić na moście?',
-                        media: '../../assets/test1/s23.jpg',
+                        media: 'assets/test1/s23.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -248,7 +248,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy wolno Ci zwiększać prędkość, jeżeli jesteś wyprzedzany przez inny pojazd?',
-                        media: '../../assets/test1/s24.jpg',
+                        media: 'assets/test1/s24.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]
@@ -261,7 +261,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy w tej sytuacji powinieneś być przygotowany do zatrzymania pojazdu?',
-                        media: '../../assets/test1/s27.jpg',
+                        media: 'assets/test1/s27.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -274,7 +274,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Zamierzasz kontynuować jazdę widoczną drogą. Czy wjeżdzając na nią jesteś obowiązany ustąpić pierwszeństwa kierującym, którzy sie nią poruszają?',
-                        media: '../../assets/test1/s31.jpg',
+                        media: 'assets/test1/s31.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -289,7 +289,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Co może być efektem nieszczelności układu wydechowego',
-                        media: '../../assets/test1/s7.jpg',
+                        media: 'assets/test1/s7.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Ubytek płynu chłodzącego',
@@ -306,7 +306,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Który z dokumentów masz obowiązek posiadać przy sobie kierując pojazdem samochodowym zarejestrowanym w Polsce?',
-                        media: '../../assets/test1/s8.jpg',
+                        media: 'assets/test1/s8.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Kartę pojazdu.',
@@ -325,7 +325,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'W jakich warunkach masz prwo włączyć światła przeciwmgłowe?',
-                        media: '../../assets/test1/s4.jpg',
+                        media: 'assets/test1/s4.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Gdy widoczność w obfitym deszczu jest ograniczona do 60 m.',
@@ -342,7 +342,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'W jaki sposób należy obserwować otoczenie podczas jazdy po autostradzie?',
-                        media: '../../assets/test1/s5.jpg',
+                        media: 'assets/test1/s5.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Patrzeć wyłącznie do przodu.',
@@ -359,7 +359,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Co należy sprawdzić, gdy lampka kontrolna kierunkowskazów zaczęła migać dużo szybciej?',
-                        media: '../../assets/test1/s9.jpg',
+                        media: 'assets/test1/s9.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Napięcie akumulatora.',
@@ -376,7 +376,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'W jaki sposób ustawisz fotel kierowcy przed jazdą?',
-                        media: '../../assets/test1/s10.jpg',
+                        media: 'assets/test1/s10.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Tak, aby umożliwiał swobodny dostęp do urządzeń pojazdu służących do kierowania i sterowania nim.',
@@ -395,7 +395,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Kiedy na obszarze zabudowanym obowiązuje dopuszczalna prędkość 50 km/h?',
-                        media: '../../assets/test1/s1.jpg',
+                        media: 'assets/test1/s1.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Od zmierzchu do świtu.',
@@ -412,7 +412,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Który z wymienionych skutków może zostać wywołany przez kontynuowanie jazdy przy świecącej się na czerwono lampce kontrolnej cisnienia oleju silnikowego?',
-                        media: '../../assets/test1/s2.jpg',
+                        media: 'assets/test1/s2.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Poważne uszkodzenie silnika.',
@@ -429,7 +429,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Jaki odstęp należy zachować podczas wyprzedzania motocykla?',
-                        media: '../../assets/test1/s3.jpg',
+                        media: 'assets/test1/s3.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Bezpieczny, ale nie większy niż 0,5 metra.',
@@ -446,7 +446,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Co jest niewskazane podczas jazdy czterokołowcem na zakręcie?',
-                        media: '../../assets/test1/s6.jpg',
+                        media: 'assets/test1/s6.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Utrzymywanie niewielkiej stałej prędkości jazdy.',
@@ -463,7 +463,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Dlaczego układanie na boku osób nieprzytomnych i oddychających jest bezpieczne?',
-                        media: '../../assets/test1/s11.jpg',
+                        media: 'assets/test1/s11.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Ponieważ zapewnia poszkodowanemu największy komfort oczekiwania na pogotowie.',
@@ -480,7 +480,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.AdvancedRead,
                         answerTime: TestQuestionTime.AdvancedAnswer,
                         question: 'Jesteś uczestnikiem lub świakdkiem wypadku drogowego. Które z wymienionych informacji należy podać dzwoniąc pod numer alarmowy?',
-                        media: '../../assets/test1/s12.jpg',
+                        media: 'assets/test1/s12.jpg',
                         answers: TestQuestionAnswers.ADVANCED,
                         answersStr: [
                             'Miejsce zdarzenia oraz liczbę i stan ofiar wypadku.',
@@ -503,7 +503,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy widoczna linia złożona z trójkątów wskazuje Ci miejce zatrzymania pojazdu w celu ustąpienia pierwszeństwa?',
-                        media: '../../assets/test1/1.jpg',
+                        media: 'assets/test1/1.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [0]
@@ -516,7 +516,7 @@ export class InMemoryTestService implements InMemoryDbService {
                         readTime: TestQuestionTime.SimpleRead,
                         answerTime: TestQuestionTime.SimpleAnswer,
                         question: 'Czy w przedstawionej sytuacji odległość znaku ostrzegawczego od miejsca niebezpiecznego wynosi od 150 do 300 metrów?',
-                        media: '../../assets/test1/2.jpg',
+                        media: 'assets/test1/2.jpg',
                         answers: TestQuestionAnswers.SIMPLE,
                         answersStr: [],
                         correctAnswers: [1]

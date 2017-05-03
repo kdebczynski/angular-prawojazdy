@@ -15,7 +15,7 @@
             
             <div class="test-question__media"
                 *ngIf="actualQuestionPhase === 'ANSWER'">
-                <img src="{{testQuestion.media}}" />
+                <img [src]="testQuestion.media" />
             </div>
 
             
